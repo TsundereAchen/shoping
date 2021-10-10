@@ -1,0 +1,88 @@
+/*
+    样式重置
+*/
+/* 把所有的标签内边距清零，*效率低一些，把所有的标签全部渲染，建议标签全部写出来 */
+*{
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+/* em和i中的斜体不倾斜 */
+em,
+i{
+    font-style: normal;
+}
+
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+/* 去掉li的小圆点 */
+li{
+    list-style: none;
+}
+
+img{
+    /* 低版本浏览器如果图片外部包含链接会有边框的问题 */
+    border: 0;
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover{
+    color: #c81623;
+}
+input,button{
+    /* \5B8B\4F53就是宋体的意思，这样浏览器兼容性会更好 */
+    font-family: Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB, '\5B8B\4F53',sans-serif;
+    /* 取消默认的边框 */
+    border: 0;
+    outline: none;
+}
+button{
+    outline: none;
+}
+table {
+    border-collapse: collapse; /* 边框模式，合并的模式 */
+}
+th,td {
+    padding: 0;
+}
+body{
+    color: #666;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.layer{
+    width: 1190px;
+    margin: 0 auto;
+}
+.c4{
+    color: #f40
+}
+.c5{
+    color: #f50;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mr10{
+    margin-right: 10px;
+}
+.mr7{
+    margin-right: 7px;
+}
+.mr5{
+    margin-right: 5px;
+}
